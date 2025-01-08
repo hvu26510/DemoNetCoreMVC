@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 50%;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+            .form-group label {
+                display: block;
+                margin-bottom: 5px;
+            }
+
+            .form-group input {
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+
+                .form-group input[type="checkbox"] {
+                    width: auto;
+                }
+
+            .form-group a {
+                color: blue;
+                text-decoration: none;
+            }
+
+                .form-group a:hover {
+                    text-decoration: underline;
+                }
+
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+        }
+
+            .buttons button {
+                width: 48%;
+                padding: 10px;
+                border: none;
+                border-radius: 5px;
+                color: white;
+                font-size: 16px;
+            }
+
+            .buttons .cancel {
+                background-color: #f44336;
+            }
+
+            .buttons .signup {
+                background-color: #4CAF50;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hello, Welcome to FPoly SignUp Form</h1>
+        <form>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter Email">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter Password">
+            </div>
+            <div class="form-group">
+                <label for="repeat-password">Repeat Password</label>
+                <input type="password" id="repeat-password" name="repeat-password" placeholder="Repeat Password">
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="remember" name="remember">
+                <label for="remember">Remember me</label>
+            </div>
+            <div class="form-group">
+                <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+            </div>
+            <div class="buttons">
+                <button type="button" class="cancel">Cancel</button>
+                <button type="submit" class="signup">Sign Up</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
